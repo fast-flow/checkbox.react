@@ -1,5 +1,7 @@
 # custom style
 
+If you want to completely customize the style,you need a reference [lib/index.css](../lib/index.css),and using the props.className props.prefixClassName.
+
 <div id="example__custom-style_node" class="fast-flow-demo">loading...</div>
 
 ````css

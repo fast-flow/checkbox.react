@@ -3,7 +3,8 @@ var Checkbox = require('checkbox.react').default
 var App = React.createClass({
     getInitialState: function () {
         return {
-            basicChecked: false,
+            basicChecked: true,
+            basicFlaseChecked: false,
             disabledChecked: true,
             disabledFalseChecked: false
         }
@@ -16,6 +17,15 @@ var App = React.createClass({
                     <Checkbox checked={self.state.basicChecked} onChange={function (e) {
                             self.setState({
                                 basicChecked: e.target.checked
+                            })
+                        }} />
+                    checkbox
+                </label>
+                <hr/>
+                <label>
+                    <Checkbox checked={self.state.basicFalseChecked} onChange={function (e) {
+                            self.setState({
+                                basicFalseChecked: e.target.checked
                             })
                         }} />
                     checkbox
