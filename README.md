@@ -1,6 +1,6 @@
 # checkbox.react
 
-> React, checkbox.
+> React,checkbox.Custom style!
 
 [![Build Status](https://api.travis-ci.org/fast-flow/checkbox.react.svg)](https://travis-ci.org/fast-flow/checkbox.react)
 [![NPM version](https://img.shields.io/npm/v/checkbox.react.svg?style=flat)](https://npmjs.org/package/checkbox.react)
