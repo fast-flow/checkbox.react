@@ -9,7 +9,7 @@ html .r-checkbox--checked {
     background-color:#3b99fc;
     border-color: #3b99fc;
 }
-.r-checkbox-checkbox {
+.r-checkbox-input {
     margin: 0;
     position: absolute;
     left: 0;
