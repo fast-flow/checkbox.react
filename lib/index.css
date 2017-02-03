@@ -4,6 +4,7 @@
     display: inline-block;
     box-sizing: border-box;
     cursor: pointer;
+    position: relative;
 }
 html .r-checkbox--checked {
     background-color:#3b99fc;
@@ -25,7 +26,6 @@ html .r-checkbox--checked {
 .r-checkbox {
     border:1px solid #BCBCBC;
     border-radius: .3em;
-    position: relative;
     background-color:white;
     box-shadow: inset 0px 1px 1px #DEDEDE;
 }
