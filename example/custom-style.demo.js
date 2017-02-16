@@ -4,24 +4,42 @@ var App = React.createClass({
     render: function () {
         return (
             <div>
-                <Checkbox className="m-checkbox--s" /> m-checkbox--s
+                <label>
+                    <Checkbox className="m-checkbox--s" /> m-checkbox--s
+                </label>
                 <br/>
-                <Checkbox className="m-checkbox--s" checked="true" /> m-checkbox--s checked
+                <label>
+                    <Checkbox className="m-checkbox--s" checked="true" /> m-checkbox--s checked
+                </label>
                 <br/>
-                <Checkbox className="m-checkbox--s" disabled={true} checked="true" /> m-checkbox--s checked disabled
+                <label>
+                    <Checkbox className="m-checkbox--s" disabled={true} checked="true" /> m-checkbox--s checked disabled
+                </label>
 
                 <hr/>
-                <Checkbox className="m-checkbox--m" /> m-checkbox--m
+                <label>
+                    <Checkbox className="m-checkbox--m" /> m-checkbox--m
+                </label>
                 <br/>
-                <Checkbox className="m-checkbox--m" checked="true" /> m-checkbox--m checked
+                <label>
+                    <Checkbox className="m-checkbox--m" checked="true" /> m-checkbox--m checked
+                </label>
                 <br/>
-                <Checkbox className="m-checkbox--m" disabled={true} checked="true" /> m-checkbox--m checked disabled
+                <label>
+                    <Checkbox className="m-checkbox--m" disabled={true} checked="true" /> m-checkbox--m checked disabled
+                </label>
                 <hr/>
-                <Checkbox className="m-checkbox--l" /> m-checkbox--l
+                <label>
+                    <Checkbox className="m-checkbox--l" /> m-checkbox--l
+                </label>
                 <br/>
-                <Checkbox className="m-checkbox--l" checked="true" /> m-checkbox--l checked
+                <label>
+                    <Checkbox className="m-checkbox--l" checked="true" /> m-checkbox--l checked
+                </label>
                 <br/>
-                <Checkbox className="m-checkbox--l" disabled={true} checked="true" /> m-checkbox--l checked disabled
+                <label>
+                    <Checkbox className="m-checkbox--l" disabled={true} checked="true" /> m-checkbox--l checked disabled
+                </label>
             </div>
         )
     }

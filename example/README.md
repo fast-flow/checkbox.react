@@ -6,6 +6,18 @@
 label { cursor: pointer; }
 ````
 
+**important**
+
+```html
+<!-- Good -->
+<label>
+    <Checkbox />
+</label>
+
+<!-- Bad -->
+<Checkbox />
+```
+
 <div id="example__basic_node" class="fast-flow-demo">loading...</div>
 
 <!--MR-R {
