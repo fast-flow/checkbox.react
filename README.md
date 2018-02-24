@@ -1,26 +1,68 @@
 # checkbox.react
 
-> React,checkbox.Custom style!
+<!--MR-D{tpl: 'home'}-->
 
-[![Build Status](https://api.travis-ci.org/fast-flow/checkbox.react.svg)](https://travis-ci.org/fast-flow/checkbox.react)
-[![NPM version](https://img.shields.io/npm/v/checkbox.react.svg?style=flat)](https://npmjs.org/package/checkbox.react)
-[![NPM downloads](http://img.shields.io/npm/dm/checkbox.react.svg?style=flat)](https://npmjs.org/package/checkbox.react)
+<!-- MARKRUN-HTML
+<style>h1 {display:none;}</style>
+-->
 
+<div class="face-one-intro">
+    <div class="face-one-intro-title">checkbox.react</div>
+    <h2 class="face-one-intro-desc">
+        复选框
+    </h2>
+    <div class="face-one-intro-tool">
+        <a href="https://onface.github.io/checkbox.react" class="face-one-intro-btn face-one-intro-btn--primary mr-online-hide" >在线文档</a>
+        <!-- MARKRUN-HTML
+            <a href="./doc/intro.md" class="face-one-intro-btn face-one-intro-btn--primary">指引</a>
+            <a href="http://github.com/onface/checkbox.react" class="face-one-intro-btn">GITHUB</a>
+        -->
+    </div>
+</div>
+<div class="face-one-feature">
+    <table style="width:100%;" data-comments="In order to github typesetting so use the table tag" >
+        <tr>
+            <td align="center" >
+                <div class="face-one-feature-item">
+                    <img src="./doc/theme/media/cogwheel.svg" alt="" class="face-one-feature-item-photo">
+                    <br />
+                    <div class="face-one-feature-item-label">定制开发</div>
+                    <div class="face-one-feature-item-desc">提供底层接口便于二次开发</div>
+                </div>
+            </td>
+            <td align="center" >
+                <div class="face-one-feature-item">
+                    <img src="./doc/theme/media/browser.svg" alt="" class="face-one-feature-item-photo">
+                    <br />
+                    <div class="face-one-feature-item-label">用户体验</div>
+                    <div class="face-one-feature-item-desc">界面细致、即时反馈，更好的用户体验</div>
+                </div>
+            </td>
+            <td align="center" >
+                <div class="face-one-feature-item">
+                    <img src="./doc/theme/media/share.svg" alt="" class="face-one-feature-item-photo">
+                    <br />
+                    <div class="face-one-feature-item-label">逻辑封装</div>
+                    <div class="face-one-feature-item-desc">提供业务逻辑封装，快速开发</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
 
-## Install
-
-```shell
-npm install checkbox.react --save
-```
-
-## Example
-
-[![Preview](./example/preview.png)](http://fast-flow.github.io/checkbox.react/example)
-
-## Online documentation
-
-[Online](http://fast-flow.github.io/checkbox.react)
-
-## Change log
-
-[CHANGELOG](./CHANGELOG.md)
+<div class="face-one-face-one-feature-title">
+    Creator
+</div>
+<div class="face-one-feature face-one-feature--creator">
+    <table style="width:100%;" data-comments="In order to github typesetting so use the table tag" >
+        <tr>
+            <td align="center" >
+                <a class="face-one-feature-item" href="https://github.com/onface">
+                    <img src="https://github.com/onface.png" width="150 height="150" alt="" class="face-one-feature-item-avatar">
+                    <br />
+                    <div class="face-one-feature-item-label">onface</div>
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>

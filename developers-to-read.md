@@ -1,39 +1,15 @@
-# Developers to read
+## Automated Builds
 
-http://github.com/fast-flow/react
+You can use travis & saucelabs test your code.
 
-### Development
+### Travis environment Variables
 
-```shell
-npm run doc
-# or npm run doc:debug
-npm run js
-# npm run js:debug
-```
+[travis](https://travis-ci.org/)
 
-### Test
+![](https://cloud.githubusercontent.com/assets/3949015/23390555/dafcf4ee-fda9-11e6-931a-8f4de5d0973b.png)
 
-```shell
-npm run test
-```
+## SAUCE_USERNAME & SAUCE_ACCESS_KEY
 
-### Publish gh-pages
-```shell
-npm run gh
-npm run s
-npm run gh-push
-```
+[Saucelabs signup OSS](https://saucelabs.com/beta/signup/OSS/None)
 
-### Publish npm
-
-```shell
-npm run npm
-cd output && npm publish
-```
-
-
-### Release
-
-```shell
-npm run release
-```
+![](https://cloud.githubusercontent.com/assets/3949015/23390554/daf8a9e8-fda9-11e6-9de8-a796e2a89226.png)

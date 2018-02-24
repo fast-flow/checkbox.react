@@ -1,7 +1,15 @@
-# Documentation
+# 文档
 
-<!-- MR-R{
-    type: 'pre',
-    file: '../lib/props.js'
-} -->
-[props](../lib/props.js)
+## basic
+
+````code
+{
+    title: '基础使用',
+    desc: '**markdown**',
+    html: '<div id="basic-demo" ></div>',
+    js: './basic.demo.js',
+    source: './Basic.js',
+    horiz: true,
+    open: false
+}
+````
