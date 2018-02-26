@@ -28,7 +28,8 @@
     html: '<div id="themes-demo" ></div>',
     js: './themes.demo.js',
     source: './Themes.js',
-    open: true
+    horiz: true,
+    open: false
 }
 ````
 
@@ -43,7 +44,8 @@
     html: '<div id="partial-demo" ></div>',
     js: './partial.demo.js',
     source: './Partial.js',
-    open: true
+    horiz: true,
+    open: false
 }
 ````
 
