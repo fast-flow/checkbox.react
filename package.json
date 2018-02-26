@@ -1,7 +1,7 @@
 {
     "name": "checkbox.react",
     "main": "lib/index.js",
-    "version": "0.3.1",
+    "version": "0.3.4",
     "description": "Checkbox",
     "keywords": "",
     "scripts": {
@@ -19,6 +19,7 @@
     "$repository": "checkbox.react",
     "dependencies": {
         "classnames": "^2.2.5",
+        "extend": "^3.0.1",
         "prop-types": "^15.6.0",
         "util.react": "^1.4.1"
     },
@@ -42,7 +43,6 @@
         "enzyme": "^3.3.0",
         "enzyme-adapter-react-16": "^1.1.1",
         "express": "^4.16.2",
-        "extend": "^3.0.1",
         "file-loader": "^1.1.6",
         "fis-parser-less-2.x": "^0.1.4",
         "fis3-hook-relative": "^2.0.1",
