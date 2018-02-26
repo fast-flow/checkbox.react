@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="theme/face/face.css">
+<meta name="keywords" content="">
+<meta name="description" content="文档">
+<title>文档</title>
+</head>
+<body>
+<div class="face-one-head">
+    <a class="face-one-head-logo" href="../index.html">
+        <img src="theme/media/logo.svg" alt="" class="face-one-head-logo-photo" />
+        face
+    </a>
+    <span class="face-one-head-slogan">
+        Write less code, do more things!
+    </span>
+    <!-- <div class="face-one-head-search">
+        <span class="face-one-head-search-icon fi fi-search"></span>
+        <input type="text" class="face-one-head-search-input" placeholder="搜索..." />
+    </div> -->
+    <div class="face-one-head-nav">
+        <span class="face-one-head-nav-switch fi fi-bars"></span>
+        <div class="face-one-head-nav-F-cnt">
+            <a href="../index.html" class="face-one-head-nav-link">首页</a>
+            <a href="intro.html" class="face-one-head-nav-link">指引</a>
+            <a href="index.html" class="face-one-head-nav-link">文档</a>
+            <a href="API.html" class="face-one-head-nav-link">API</a>
+        </div>
+        <script>
+        Array.from(document.querySelectorAll('.face-one-head-nav-link')).forEach(function (node) {
+            if (node.href) {
+                var pathname = node.href.replace(/\?.*/, '')
+                if (pathname === location.origin + location.pathname) {
+                    node.setAttribute('class', node.getAttribute('class') + ' ' + 'face-one-head-nav-link--on')
+                }
+            }
+        })
+        </script>
+    </div>
+</div>
+
+<div class="face-one-layout">
+<div class="face-one-layout-F-line">
+<div class="face-one-layout-sidebar">
+<div class="face-one-nav">
+<span class="face-one-nav-switch fi fi-angle-double-right"></span>
+<div class="face-one-nav-F-inner">
+<div class="face-one-nav-item">
+    <a href="intro.html" class="face-one-nav-item-label">指引</a>
+</div>
+<!-- <div class="face-one-nav-item">
+    <a href="index.html" class="face-one-nav-item-label">文档</a>
+</div> -->
+<!-- face-one-nav-item--group-on 控制默认展开 -->
+<div class="face-one-nav-item face-one-nav-item--group face-one-nav-item--group-on">
+    <span class="face-one-nav-item-switch fi fi-down"></span>
+    <span class="face-one-nav-item-label">
+        文档
+    </span>
+    <div class="face-one-nav-item-group">
+        <div class="face-one-nav-item-group-title">示例</div>
+        <a href="index.html#basic" class="face-one-nav-item-group-item">basic</a>
+        <a href="index.html#group" class="face-one-nav-item-group-item">group</a>
+    </div>
+    <div class="face-one-nav-item-group">
+        <div class="face-one-nav-item-group-title">自定义界面</div>
+        <a href="STYLE.html#size" class="face-one-nav-item-group-item">size</a>
+        <a href="STYLE.html#themes" class="face-one-nav-item-group-item">custom-themes</a>
+        <a href="STYLE.html#partial" class="face-one-nav-item-group-item">partial</a>
+        <a href="STYLE.html#pcls" class="face-one-nav-item-group-item">prefixClassName</a>
+    </div>
+</div>
+<div class="face-one-nav-item">
+    <a href="API.html" class="face-one-nav-item-label">API</a>
+</div>
+</div>
+</div>
+</div>
+<div class="face-one-layout-cnt">
+<div id="face-one-cnt" class="face-one-cnt markdown-body">
+<div id="face-one-sidebar" class="face-one-sidebar"></div>
+<h1 id="文档" ><a class="markrun-anchor" href="../Users/GrifreeMac/Documents/github/onface/checkbox.react/#文档"><span class="markrun-anchor-link"></span></a>文档</h1><h2 id="size" ><a class="markrun-anchor" href="../Users/GrifreeMac/Documents/github/onface/checkbox.react/#size"><span class="markrun-anchor-link"></span></a>size</h2>
+    <div class="face-one-code   face-one-code--horiz">
+                        <div class="face-one-code-F-view">
+                            <div class="face-one-code-example">
+                                <div id="size-demo" ></div>
+                            </div>
+                            <div class="face-one-code-info">
+                                <div class="face-one-code-info-title">基础使用</div>
+                                <div class="face-one-code-info-desc">
+                                    <p><strong>通过改变包裹的div的<code>font-size</code>来自适应大小</strong></p>
+                                </div>
+                                <span class="face-one-code-info-switchCode fi fi-ellipsis"></span>
+                            </div>
+                        </div>
+                        <div class="face-one-code-source">
+                            <div class="face-one-code-source-tool">
+                                <span class="face-one-code-source-tool-copy fi fi-files-o"></span>
+                            </div>
+                            <pre><code class="lang-js"><span class="hljs-selector-tag">var</span> React = require(<span class="hljs-string">'react'</span>)
+<span class="hljs-selector-tag">var</span> Checkbox = require(<span class="hljs-string">'checkbox.react'</span>)
+class Size extends React<span class="hljs-selector-class">.Component</span> {
+    constructor(props){
+        super(props)
+        this<span class="hljs-selector-class">.state</span> = {
+            check: true
+        }
+    }
+    changeCheck = (e) =&gt; {
+        this.setState({
+            check: e<span class="hljs-selector-class">.target</span><span class="hljs-selector-class">.checked</span>
+        })
+    }
+    render () {
+        let self = this
+        return (
+            &lt;<span class="hljs-selector-tag">div</span> className=<span class="hljs-string">"sizeDemo"</span> &gt;
+                {<span class="hljs-comment">/* =&gt; fontsize: 16px */</span>}
+                &lt;label&gt;
+                    &lt;Checkbox checked={self<span class="hljs-selector-class">.state</span><span class="hljs-selector-class">.check</span>} 
+                              onChange={self.changeCheck} 
+                    /&gt;
+                    &lt;span&gt;default&lt;/span&gt;
+                &lt;/label&gt;
+                &lt;hr/&gt;
+                &lt;<span class="hljs-selector-tag">label</span> style={{<span class="hljs-string">'fontSize'</span>:<span class="hljs-string">'8px'</span>}} &gt;
+                    &lt;Checkbox checked={self<span class="hljs-selector-class">.state</span><span class="hljs-selector-class">.check</span>} 
+                              onChange={self.changeCheck} 
+                    /&gt;
+                    &lt;span&gt;small&lt;/span&gt;
+                &lt;/label&gt;
+                &lt;hr/&gt;
+                &lt;<span class="hljs-selector-tag">label</span> style={{<span class="hljs-string">'fontSize'</span>:<span class="hljs-string">'32px'</span>}} &gt;
+                    &lt;Checkbox checked={self<span class="hljs-selector-class">.state</span><span class="hljs-selector-class">.check</span>} 
+                              onChange={self.changeCheck} 
+                    /&gt;
+                    &lt;span&gt;large&lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+        )
+    }
+}
+
+module<span class="hljs-selector-class">.exports</span> = Size
+
+</code></pre>
+                        </div>
+                        
+                    </div>
+                                
+<h2 id="themes" ><a class="markrun-anchor" href="../Users/GrifreeMac/Documents/github/onface/checkbox.react/#themes"><span class="markrun-anchor-link"></span></a>themes</h2><p>复制 <a href="../lib/less">lib/less/</a> 下的文件<br>添加 <a href="../lib/less/settings.less">lib/less/settings.less</a> 部分或者其他代码。配置 <code>color</code>。<br>在 <a href="../lib/less/themes.less">lib/less/themes.less</a> 文件中添加自定义主题 例:<code>/* xxx  (start) */</code> <strong><code>demo code</code></strong> <code>/* xxx  (end) */</code>        </p>
+
+    <div class="face-one-code   face-one-code--horiz">
+                        <div class="face-one-code-F-view">
+                            <div class="face-one-code-example">
+                                <div id="themes-demo" ></div>
+                            </div>
+                            <div class="face-one-code-info">
+                                <div class="face-one-code-info-title">多次封装</div>
+                                <div class="face-one-code-info-desc">
+                                    <p>此处另加了prefixClassName属性 是在示例中防止与组件自带样式重复覆盖</p>
+                                </div>
+                                <span class="face-one-code-info-switchCode fi fi-ellipsis"></span>
+                            </div>
+                        </div>
+                        <div class="face-one-code-source">
+                            <div class="face-one-code-source-tool">
+                                <span class="face-one-code-source-tool-copy fi fi-files-o"></span>
+                            </div>
+                            <pre><code class="lang-js"><span class="hljs-keyword">var</span> React = <span class="hljs-keyword">require</span>(<span class="hljs-string">'react'</span>)
+<span class="hljs-keyword">var</span> Checkbox = <span class="hljs-keyword">require</span>(<span class="hljs-string">'checkbox.react'</span>)
+
+<span class="hljs-comment">// 引入复制后修改样式</span>
+import <span class="hljs-string">'./themes.demo.less/index.less'</span>;
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyCheckbox</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+    render () {
+        <span class="hljs-keyword">return</span> (
+            &lt;Checkbox themes=<span class="hljs-string">"green"</span> {...this.props} prefixClassName=<span class="hljs-string">"mycheckbox"</span> /&gt;
+        )
+    }
+}
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Themes</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+    constructor(props){
+        super(props)
+        this.state = {
+            basicChecked: <span class="hljs-keyword">true</span>,
+            basicFlaseChecked: <span class="hljs-keyword">false</span>,
+            disabledChecked: <span class="hljs-keyword">true</span>,
+            disabledFalseChecked: <span class="hljs-keyword">false</span>
+        }
+    }
+    render () {
+        <span class="hljs-keyword">let</span> <span class="hljs-keyword">self</span> = this
+        <span class="hljs-keyword">return</span> (
+            &lt;div className=<span class="hljs-string">"themesDemo"</span> &gt;
+                &lt;label&gt;
+                    &lt;MyCheckbox checked={<span class="hljs-keyword">self</span>.state.basicChecked} onChange={<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(e)</span> </span>{
+                            <span class="hljs-keyword">self</span>.setState({
+                                basicChecked: e.target.checked
+                            })
+                        }} /&gt;
+                    &lt;span&gt;checkbox&lt;/span&gt;
+                &lt;/label&gt;
+                &lt;hr/&gt;
+                &lt;label&gt;
+                    &lt;MyCheckbox checked={<span class="hljs-keyword">self</span>.state.basicFalseChecked} onChange={<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(e)</span> </span>{
+                            <span class="hljs-keyword">self</span>.setState({
+                                basicFalseChecked: e.target.checked
+                            })
+                        }} /&gt;
+                    &lt;span&gt;checkbox&lt;/span&gt;
+                &lt;/label&gt;
+                &lt;hr/&gt;
+                &lt;label&gt;
+                    &lt;MyCheckbox checked={<span class="hljs-keyword">self</span>.state.disabledChecked} disabled={<span class="hljs-keyword">true</span>} onChange={<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(e)</span> </span>{
+                            <span class="hljs-keyword">self</span>.setState({
+                                disabledChecked: e.target.checked
+                            })
+                        }} /&gt;
+                    &lt;span&gt;disabled | checked:<span class="hljs-keyword">true</span>&lt;/span&gt;
+                &lt;/label&gt;
+                &lt;hr/&gt;
+                &lt;label&gt;
+                    &lt;MyCheckbox checked={<span class="hljs-keyword">self</span>.state.disabledFalseChecked} disabled={<span class="hljs-keyword">true</span>} onChange={<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(e)</span> </span>{
+                            <span class="hljs-keyword">self</span>.setState({
+                                disabledChecked: e.target.checked
+                            })
+                        }} /&gt;
+                    &lt;span&gt;disabled | checked: <span class="hljs-keyword">false</span>&lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+        )
+    }
+}
+
+module.exports = Themes
+
+</code></pre>
+                        </div>
+                        
+                    </div>
+                                
+<h2 id="partial" ><a class="markrun-anchor" href="../Users/GrifreeMac/Documents/github/onface/checkbox.react/#partial"><span class="markrun-anchor-link"></span></a>partial</h2><blockquote>
+<p>内置一个themes <code>partial</code> 给<a href="https://onface.github.io/tree.react/">其他组件</a>预用</p>
+</blockquote>
+
+    <div class="face-one-code   face-one-code--horiz">
+                        <div class="face-one-code-F-view">
+                            <div class="face-one-code-example">
+                                <div id="partial-demo" ></div>
+                            </div>
+                            <div class="face-one-code-info">
+                                <div class="face-one-code-info-title">themes</div>
+                                <div class="face-one-code-info-desc">
+                                    
+                                </div>
+                                <span class="face-one-code-info-switchCode fi fi-ellipsis"></span>
+                            </div>
+                        </div>
+                        <div class="face-one-code-source">
+                            <div class="face-one-code-source-tool">
+                                <span class="face-one-code-source-tool-copy fi fi-files-o"></span>
+                            </div>
+                            <pre><code class="lang-js"><span class="hljs-keyword">var</span> React = <span class="hljs-keyword">require</span>(<span class="hljs-string">'react'</span>)
+<span class="hljs-keyword">var</span> Checkbox = <span class="hljs-keyword">require</span>(<span class="hljs-string">'checkbox.react'</span>)
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Partial</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+    constructor(props){
+        super(props)
+        this.state = {
+            basicChecked: <span class="hljs-keyword">true</span>,
+            basicFlaseChecked: <span class="hljs-keyword">false</span>,
+            disabledChecked: <span class="hljs-keyword">true</span>,
+            disabledFalseChecked: <span class="hljs-keyword">false</span>
+        }
+    }
+    render () {
+        <span class="hljs-keyword">let</span> <span class="hljs-keyword">self</span> = this
+        <span class="hljs-keyword">return</span> (
+            &lt;div className=<span class="hljs-string">"basicDemo"</span> &gt;
+                &lt;label&gt;
+                    &lt;Checkbox 
+                        themes=<span class="hljs-string">"partial"</span>
+                        checked={<span class="hljs-keyword">self</span>.state.basicChecked} 
+                        onChange={<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(e)</span> </span>{
+                            <span class="hljs-keyword">self</span>.setState({
+                                basicChecked: e.target.checked
+                            })
+                        }} /&gt;
+                    &lt;span&gt;checkbox&lt;/span&gt;
+                &lt;/label&gt;
+                &lt;hr/&gt;
+                &lt;label&gt;
+                    &lt;Checkbox
+                        themes=<span class="hljs-string">"partial"</span> 
+                        checked={<span class="hljs-keyword">self</span>.state.basicFalseChecked} 
+                        onChange={<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(e)</span> </span>{
+                            <span class="hljs-keyword">self</span>.setState({
+                                basicFalseChecked: e.target.checked
+                            })
+                        }} /&gt;
+                    &lt;span&gt;checkbox&lt;/span&gt;
+                &lt;/label&gt;
+                &lt;hr/&gt;
+                &lt;label&gt;
+                    &lt;Checkbox
+                        themes=<span class="hljs-string">"partial"</span> 
+                        checked={<span class="hljs-keyword">self</span>.state.disabledChecked} 
+                        disabled={<span class="hljs-keyword">true</span>} 
+                        onChange={<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(e)</span> </span>{
+                            <span class="hljs-keyword">self</span>.setState({
+                                disabledChecked: e.target.checked
+                            })
+                        }} /&gt;
+                    &lt;span&gt;disabled | checked:<span class="hljs-keyword">true</span>&lt;/span&gt;
+                &lt;/label&gt;
+                &lt;hr/&gt;
+                &lt;label&gt;
+                    &lt;Checkbox
+                        themes=<span class="hljs-string">"partial"</span> 
+                        checked={<span class="hljs-keyword">self</span>.state.disabledFalseChecked} 
+                        disabled={<span class="hljs-keyword">true</span>} 
+                        onChange={<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(e)</span> </span>{
+                            <span class="hljs-keyword">self</span>.setState({
+                                disabledChecked: e.target.checked
+                            })
+                        }} /&gt;
+                    &lt;span&gt;disabled | checked: <span class="hljs-keyword">false</span>&lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+        )
+    }
+}
+
+module.exports = Partial
+
+</code></pre>
+                        </div>
+                        
+                    </div>
+                                
+<h2 id="prefixClassName" ><a class="markrun-anchor" href="../Users/GrifreeMac/Documents/github/onface/checkbox.react/#prefixClassName"><span class="markrun-anchor-link"></span></a>prefixClassName</h2><p>复制 <a href="./lib/index.less">lib/index.less</a> 和 <a href="./lib/less">lib/less/</a> 下的文件，修改 <code>border-radius</code> 部分或者其他代码。配置 <code>prefixClassName</code>。
+<a href="../Users/GrifreeMac/Documents/github/onface/checkbox.react/#themes">参考上面例子</a></p></div>
+</div>
+</div>
+</div>
+<script>
+Array.from(document.querySelectorAll('.face-one-nav-item-label')).forEach(function (node) {
+    if (node.href) {
+        var pathname = node.href.replace(/\?.*/, '')
+        if (pathname === location.origin + location.pathname + location.hash) {
+            node.setAttribute('class', node.getAttribute('class') + ' ' + 'face-one-nav-item-label--on')
+        }
+    }
+})
+var faceOneGetParent = function faceOneGetParent (el, className) {
+   if (el.parentNode.nodeName.toLowerCase() === 'html') {
+       return null
+   }
+   var parentClassName = el.parentNode.getAttribute('class')
+   var classNames = ''
+   if (parentClassName) {
+       classNames = parentClassName.split(' ')
+   }
+   if (classNames.indexOf(className) !== -1) {
+       return el.parentNode
+   }
+   else {
+       return faceOneGetParent(el.parentNode, className)
+   }
+}
+Array.from(document.querySelectorAll('.face-one-nav-item-group-item')).forEach(function (node) {
+    addAvativeClass(node)
+    function addAvativeClass (node)  {
+        if (node.href) {
+            var pathname = node.href.replace(/\?.*/, '')
+            if (pathname === location.origin + location.pathname + location.hash) {
+                node.setAttribute('class', node.getAttribute('class') + ' ' + 'face-one-nav-item-group-item--on')
+                var parentNode = faceOneGetParent(node, 'face-one-nav-item--group')
+                if (parentNode) {
+                    parentNode.setAttribute('class', parentNode.getAttribute('class') + ' ' + 'face-one-nav-item--group-on')
+                }
+            }
+        }
+    }
+
+})
+</script>
+<div class="face-one-foot">
+    <div class="face-one-foot-F-inner">
+        <div class="face-one-foot-group">
+            <div class="face-one-foot-group-title">
+                <span class="face-one-foot-group-title-icon fi fi-github"></span>
+                Github
+            </div>
+            <div class="face-one-foot-group-item">
+                <a href="https://github.com/onface/checkbox.react" class="face-one-foot-group-item-link">checkbox.react</a>
+                - 项目源码
+            </div>
+        </div>
+        <div class="face-one-foot-group">
+            <div class="face-one-foot-group-title">
+                <span class="face-one-foot-group-title-icon fi fi-link"></span>
+                相关站点
+            </div>
+            <div class="face-one-foot-group-item">
+                <a href="https://onface.github.io/component-spec">component-spec</a>
+                - 组件规范
+            </div>
+            <div class="face-one-foot-group-item">
+                <a href="https://github.com/onface/module" class="face-one-foot-group-item-link">module</a>
+                - 开源项目脚手架
+            </div>
+            <div class="face-one-foot-group-item">
+                <a href="http://onface.cc/" class="face-one-foot-group-item-link">onface.cc</a>
+                - 资源集合
+            </div>
+        </div>
+        <div class="face-one-foot-group">
+            <div class="face-one-foot-group-title">
+                <span class="face-one-foot-group-title-icon fi fi-team"></span>
+                社区
+            </div>
+            <div class="face-one-foot-group-item">
+                <a href="https://github.com/onface/checkbox.react/issues" class="face-one-foot-group-item-link">Github issues</a>
+            </div>
+            <div class="face-one-foot-group-item">
+                <a href="https://github.com/onface/checkbox.react/issues/new" class="face-one-foot-group-item-link">提交bug</a>
+            </div>
+        </div>
+        <div class="face-one-foot-copyright">
+            <a href="../index.html" class="face-one-foot-copyright-title">
+                <img src="theme/media/logo.svg" class="face-one-foot-copyright-title-logo" />
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="theme/jquery.js"></script>
+<script>delete window.$</script>
+<script src="theme/face/face.js" ></script>
+<script data-markrun-lastrun="true">
+                        document.write('<scri' + 'pt src="./size.demo.js?v=0.3.0"' + '" ></sc' + 'ript>')
+                        </script><script data-markrun-lastrun="true">
+                        document.write('<scri' + 'pt src="./themes.demo.js?v=0.3.0"' + '" ></sc' + 'ript>')
+                        </script><script data-markrun-lastrun="true">
+                        document.write('<scri' + 'pt src="./partial.demo.js?v=0.3.0"' + '" ></sc' + 'ript>')
+                        </script></body>
+</html>
