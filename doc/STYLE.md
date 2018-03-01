@@ -5,7 +5,7 @@
 ````code
 {
     title: '基础使用',
-    desc: '**通过改变包裹的div的`font-size`来自适应大小**',
+    desc: '**通过改变包裹的div的`font-size`来自适应大小。<br/>建议font-size不要小于14px，因为浏览器对于含小数值px(像素)解析有差异。**',
     html: '<div id="size-demo" ></div>',
     js: './size.demo.js',
     source: './Size.js',
@@ -13,7 +13,6 @@
     open: false
 }
 ````
-
 
 ## themes
 
@@ -49,9 +48,9 @@
 }
 ````
 
-
-
 ## prefixClassName
 
 复制 [lib/index.less](./lib/index.less) 和 [lib/less/](./lib/less) 下的文件，修改 `border-radius` 部分或者其他代码。配置 `prefixClassName`。
 [参考上面例子](#themes)
+
+

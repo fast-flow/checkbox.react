@@ -17,26 +17,23 @@ class Size extends React.Component {
         return (
             <div className="sizeDemo" >
                 {/* => fontsize: 16px */}
-                <label>
+                <div>
                     <Checkbox checked={self.state.check} 
                               onChange={self.changeCheck} 
-                    />
-                    <span>default</span>
-                </label>
+                    >default</Checkbox>
+                </div>
                 <hr/>
-                <label style={{'fontSize':'8px'}} >
+                <div style={{'fontSize':'32px'}} >
                     <Checkbox checked={self.state.check} 
                               onChange={self.changeCheck} 
-                    />
-                    <span>small</span>
-                </label>
+                    >large</Checkbox>
+                </div>
                 <hr/>
-                <label style={{'fontSize':'32px'}} >
+                <div style={{'fontSize':'48px'}} >
                     <Checkbox checked={self.state.check} 
                               onChange={self.changeCheck} 
-                    />
-                    <span>large</span>
-                </label>
+                    >very large</Checkbox>
+                </div>
             </div>
         )
     }

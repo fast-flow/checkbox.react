@@ -14,41 +14,33 @@ class Basic extends React.Component {
     	let self = this
         return (
             <div className="basicDemo" >
-                <label>
-                    <Checkbox checked={self.state.basicChecked} onChange={function (e) {
-                            self.setState({
-                                basicChecked: e.target.checked
-                            })
-                        }} />
-                    <span>checkbox</span>
-                </label>
+                <Checkbox checked={self.state.basicChecked} onChange={function (e) {
+                        self.setState({
+                            basicChecked: e.target.checked
+                        })
+                    }}
+                >checkbox</Checkbox>
                 <hr/>
-                <label>
-                    <Checkbox checked={self.state.basicFalseChecked} onChange={function (e) {
-                            self.setState({
-                                basicFalseChecked: e.target.checked
-                            })
-                        }} />
-                    <span>checkbox</span>
-                </label>
+                <Checkbox checked={self.state.basicFalseChecked} onChange={function (e) {
+                        self.setState({
+                            basicFalseChecked: e.target.checked
+                        })
+                    }}
+                >checkbox</Checkbox>
                 <hr/>
-                <label>
-                    <Checkbox checked={self.state.disabledChecked} disabled={true} onChange={function (e) {
-                            self.setState({
-                                disabledChecked: e.target.checked
-                            })
-                        }} />
-                    <span>disabled | checked:true</span>
-                </label>
+                <Checkbox checked={self.state.disabledChecked} disabled={true} onChange={function (e) {
+                        self.setState({
+                            disabledChecked: e.target.checked
+                        })
+                    }}
+                >disabled | checked:true</Checkbox>
                 <hr/>
-                <label>
-                    <Checkbox checked={self.state.disabledFalseChecked} disabled={true} onChange={function (e) {
-                            self.setState({
-                                disabledChecked: e.target.checked
-                            })
-                        }} />
-                    <span>disabled | checked: false</span>
-                </label>
+                <Checkbox checked={self.state.disabledFalseChecked} disabled={true} onChange={function (e) {
+                        self.setState({
+                            disabledChecked: e.target.checked
+                        })
+                    }}
+                >disabled | checked: false</Checkbox>
             </div>
         )
     }
