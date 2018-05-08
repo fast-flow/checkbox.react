@@ -256,24 +256,30 @@
 .face-checkbox--focus.face-checkbox--checked .face-checkbox-switch-icon {
   box-shadow: 0 0 0 0.125em rgba(45, 140, 240, 0.2);
 }
+.face-checkbox.face-checkbox--disabled,
 .face-checkbox--disabled,
 .face-checkbox--disabled.face-checkbox--checked {
   cursor: not-allowed;
 }
+.face-checkbox.face-checkbox--disabled:hover .face-checkbox-switch-icon,
 .face-checkbox--disabled:hover .face-checkbox-switch-icon,
 .face-checkbox--disabled.face-checkbox--checked:hover .face-checkbox-switch-icon,
+.face-checkbox.face-checkbox--disabled .face-checkbox-switch-icon,
 .face-checkbox--disabled .face-checkbox-switch-icon,
 .face-checkbox--disabled.face-checkbox--checked .face-checkbox-switch-icon {
   border-color: #cccccc;
   background-color: #eeeeee;
   box-shadow: inset 0px 1px 1px #DEDEDE;
 }
+.face-checkbox.face-checkbox--disabled:hover .face-checkbox-switch-icon:before,
 .face-checkbox--disabled:hover .face-checkbox-switch-icon:before,
 .face-checkbox--disabled.face-checkbox--checked:hover .face-checkbox-switch-icon:before,
+.face-checkbox.face-checkbox--disabled .face-checkbox-switch-icon:before,
 .face-checkbox--disabled .face-checkbox-switch-icon:before,
 .face-checkbox--disabled.face-checkbox--checked .face-checkbox-switch-icon:before {
   border-color: #aaaaaa;
 }
+.face-checkbox.face-checkbox--disabled .face-checkbox-label,
 .face-checkbox--disabled .face-checkbox-label,
 .face-checkbox--disabled.face-checkbox--checked .face-checkbox-label {
   color: rgba(0, 0, 0, 0.45);
