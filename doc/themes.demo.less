@@ -1,17 +1,11 @@
-@import "./settings.less";
+// from file '/lib/less/settings.less'
+@prefix: face-checkbox;
 
-.faceCheckboxCheckedInnerStyle() {
-    height: 0.375em;
-    width: 0.625em;
-    top: 0; left: 0; right: 0;bottom: 0;
-    background-color: transparent;
-    margin: auto;
-    margin-top: 0.15625em ; // calc( height/4 + borderWidth ) => calc( 0.375em/4 + 0.125em/2 )
-    margin-left: 0.14375em ; // calc( height/4 + borderWidth/5*2 ) => calc( 0.375em/4 + 0.125em/5*2 )
-    border-style: solid;  
-    border-width: 0 0 0.125em 0.125em;
-}
+// set custom color
+@face-checkbox-border-red-color: rgba(210, 20, 60, 1);
+@face-checkbox-shadow-red-color: rgba(210, 20, 60, 0.2);
 
+// from file '/lib/less/extend.less'
 .faceCheckboxStyle(@border, @shadow) {
 	&.@{prefix}:hover .@{prefix}-switch-icon {
         border-color: @border;
@@ -32,4 +26,9 @@
 	    }
 	}
 
+}
+
+// apply custom color
+.@{prefix}--themes-red {
+    .faceCheckboxStyle(@face-checkbox-border-red-color, @face-checkbox-shadow-red-color);
 }

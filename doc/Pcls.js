@@ -2,22 +2,22 @@ var React = require('react')
 var Checkbox = require('checkbox.react')
 
 // 引入复制后修改样式
-import './themes.demo.less';
+import './pcls.demo.less/index.less';
 class MyCheckbox extends React.Component {
     render () {
         return (
-            <Checkbox themes="red" {...this.props} />
+            <Checkbox themes="green" {...this.props} prefixClassName="mycheckbox" />
         )
     }
 }
 
 
-class Themes extends React.Component {
+class Pcls extends React.Component {
 	constructor(props){
 		super(props)
 		this.state = {
-            basicChecked: true,
-            basicFlaseChecked: false,
+            pclsChecked: true,
+            pclsFlaseChecked: false,
             disabledChecked: true,
             disabledFalseChecked: false
 		}
@@ -25,16 +25,16 @@ class Themes extends React.Component {
     render () {
     	let self = this
         return (
-            <div className="themesDemo" >
-                <MyCheckbox checked={self.state.basicChecked} onChange={function (e) {
+            <div className="pclsDemo" >
+                <MyCheckbox checked={self.state.pclsChecked} onChange={function (e) {
                         self.setState({
-                            basicChecked: e.target.checked
+                            pclsChecked: e.target.checked
                         })
                     }} >checkbox</MyCheckbox>
                 <hr/>
-                <MyCheckbox checked={self.state.basicFalseChecked} onChange={function (e) {
+                <MyCheckbox checked={self.state.pclsFalseChecked} onChange={function (e) {
                         self.setState({
-                            basicFalseChecked: e.target.checked
+                            pclsFalseChecked: e.target.checked
                         })
                     }} >checkbox</MyCheckbox>
                 <hr/>
@@ -53,5 +53,5 @@ class Themes extends React.Component {
         )
     }
 }
-/*ONFACE-DEL*/Themes = require("react-hot-loader").hot(module)(Themes)
-module.exports = Themes
+/*ONFACE-DEL*/Pcls = require("react-hot-loader").hot(module)(Pcls)
+module.exports = Pcls

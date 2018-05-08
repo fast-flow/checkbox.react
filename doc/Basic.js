@@ -27,6 +27,16 @@ class Basic extends React.Component {
                         })
                     }}
                 >checkbox</Checkbox>
+                <Checkbox checked={self.state.basicTrueChecked} onChange={function (e) {
+                        self.setState({
+                            basicTrueChecked: e.target.checked
+                        })
+                    }}
+                >
+                    checkbox
+                    <a href="http://github.com/onface" target="_blank" > link </a>
+                    checkbox
+                </Checkbox>
                 <hr/>
                 <Checkbox checked={self.state.disabledChecked} disabled={true} onChange={function (e) {
                         self.setState({
