@@ -1,0 +1,15 @@
+.face-checkbox--themes-red.face-checkbox:hover .face-checkbox-switch-icon {
+  border-color: #d2143c;
+  box-shadow: inset 0 1px 1px rgba(210, 20, 60, 0.2);
+}
+.face-checkbox--themes-red.face-checkbox--checked:hover .face-checkbox-switch-icon,
+.face-checkbox--themes-red.face-checkbox--checked .face-checkbox-switch-icon {
+  background-color: #d2143c;
+  border-color: #d2143c;
+}
+.face-checkbox--themes-red.face-checkbox--focus:hover .face-checkbox-switch-icon,
+.face-checkbox--themes-red.face-checkbox--focus.face-checkbox--checked:hover .face-checkbox-switch-icon,
+.face-checkbox--themes-red.face-checkbox--focus .face-checkbox-switch-icon,
+.face-checkbox--themes-red.face-checkbox--focus.face-checkbox--checked .face-checkbox-switch-icon {
+  box-shadow: 0 0 0 0.125em rgba(210, 20, 60, 0.2);
+}

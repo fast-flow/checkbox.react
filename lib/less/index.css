@@ -129,6 +129,11 @@
   border-color: #2d8cf0;
   box-shadow: none;
 }
+.face-checkbox--checked .face-checkbox-switch-icon:before {
+  filter: alpha(opacity=100);
+  opacity: 1;
+  transform: rotate(-55deg) scale(1);
+}
 @-webkit-keyframes checkedAnimate {
   0% {
     opacity: 1;
@@ -243,10 +248,7 @@
     border-width: 0 0 0.125em 0.125em;
   }
 }
-.face-checkbox--checked .face-checkbox-switch-icon:before {
-  filter: alpha(opacity=100);
-  opacity: 1;
-  transform: rotate(-55deg) scale(1);
+.face-checkbox--focus.face-checkbox--checked .face-checkbox-switch-icon:before {
   -webkit-animation: checkedAnimate 0.36s ease-in-out;
   animation: checkedAnimate 0.36s ease-in-out;
 }
