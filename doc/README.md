@@ -1,44 +1,31 @@
 # 文档
 
+更多的组合样式请查看 [label.react](https://github.com/onface/label.react)
+
 ## basic
 
 ````code
 {
     title: '基础使用',
-    desc: '**markdown**',
+    desc: '',
     html: '<div id="basic-demo" ></div>',
-    js: './basic.demo.js',
-    source: './Basic.js',
-    horiz: true,
-    open: false
-}
-````
-
-## before
-
-````code
-{
-    title: '基础使用',
-    desc: '**markdown**',
-    html: '<div id="before-demo" ></div>',
-    js: './before.demo.js',
-    source: './Before.js',
-    horiz: true,
-    open: false
+    source: './basic.demo.js',
+    open: true,
+    side: true,
 }
 ````
 
 ## size
+
 
 ````code
 {
     title: '基础使用',
     desc: '**通过改变包裹的div的`font-size`来自适应大小。<br/>建议font-size不要小于默认尺寸，因为浏览器对于含小数值px(像素)解析有差异。**',
     html: '<div id="size-demo" ></div>',
-    js: './size.demo.js',
-    source: './Size.js',
-    horiz: true,
-    open: false
+    source: './size.demo.js',
+    open: true,
+    side: true,
 }
 ````
 
@@ -49,21 +36,25 @@
 
 ````code
 {
-    title: 'themes.demo.less',
-    source:'./themes.demo.less',
+    title: 'themes',
+    desc: '',
+    source: 'themes.demo.less',
+    open: false,
+    run:false
 }
 ````
+
 ````code
 {
     title: '多次封装',
     desc: '此处另加了prefixClassName属性 是在示例中防止与组件自带样式重复覆盖',
     html: '<div id="themes-demo" ></div>',
-    js: './themes.demo.js',
-    source: './Themes.js',
-    horiz: true,
-    open: false
+    source: './themes.demo.js',
+    open: true,
+    side: true,
 }
 ````
+
 2. 也可以全部复制样式文件后做修改 [参考下面例子 prefixClassName](#prefixClassName)         
 复制 [lib/less/](/lib/less/) 下的文件     
 添加 [lib/less/settings.less](/lib/less/settings.less) 部分或者其他代码。配置 `color`。       
@@ -72,19 +63,18 @@
 
 
 
-## partial
+## themes else
 
-> 内置一个themes `partial` 给[其他组件](https://onface.github.io/tree.react/)预用
+> 内置themes `partial` `exist` 给[其他组件](https://onface.github.io/tree.react/)预用
 
 ````code
 {
-    title: 'themes',
+    title: '`themes-partial` `themes-exist`',
     desc: '',
-    html: '<div id="partial-demo" ></div>',
-    js: './partial.demo.js',
-    source: './Partial.js',
-    horiz: true,
-    open: false
+    html: '<div id="else-demo" ></div>',
+    source: './else.demo.js',
+    open: true,
+    side: true,
 }
 ````
 
@@ -100,9 +90,9 @@
     title: '多次封装',
     desc: '',
     html: '<div id="pcls-demo" ></div>',
-    js: './pcls.demo.js',
-    source: './Pcls.js',
-    horiz: true,
-    open: false
+    source: './pcls.demo.js',
+    open: true,
+    side: true,
 }
 ````
+

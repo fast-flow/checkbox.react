@@ -2,7 +2,7 @@
 @import "./extend.less";
 
 .@{prefix}--themes-partial {
-    .@{prefix}-switch-icon {
+    .@{prefix}-icon {
         background-color:@face-checkbox-active-color;
         border-color: @face-checkbox-active-color;
         box-shadow: none;
@@ -22,10 +22,33 @@
         }
     }
     &.@{prefix}--checked {
-        .@{prefix}-switch-icon {
+        .@{prefix}-icon {
             &:before {
+                transform: rotate(-55deg) scale(1) ;
                 .faceCheckboxCheckedInnerStyle;
             }
+        }
+    }
+    &.@{prefix}--focus,
+    &.@{prefix}--focus.@{prefix}--checked {
+        &:hover .@{prefix}-icon ,
+        .@{prefix}-icon {
+            box-shadow: 0 0 0 0.125em @face-checkbox-shadow-active-color;
+        }
+    }
+}
+
+.@{prefix}--themes-exist {
+    .@{prefix}-icon {
+        background-color:@face-checkbox-active-color;
+        border-color: @face-checkbox-active-color;
+        box-shadow: none;
+    }
+    &.@{prefix}--focus,
+    &.@{prefix}--focus.@{prefix}--checked {
+        &:hover .@{prefix}-icon ,
+        .@{prefix}-icon {
+            box-shadow: 0 0 0 0.125em @face-checkbox-shadow-active-color;
         }
     }
 }

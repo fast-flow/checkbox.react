@@ -12,22 +12,23 @@
     border-width: 0 0 0.125em 0.125em;
 }
 
+
 .faceCheckboxStyle(@border, @shadow) {
-	&.@{prefix}:hover .@{prefix}-switch-icon {
+	&.@{prefix}:hover .@{prefix}-icon {
         border-color: @border;
         box-shadow: inset 0 1px 1px @shadow;
     }
     &.@{prefix}--checked {
-    	&:hover .@{prefix}-switch-icon ,
-	    .@{prefix}-switch-icon {
+    	&:hover .@{prefix}-icon ,
+	    .@{prefix}-icon {
 	        background-color: @border;
 	        border-color: @border;
 	    }
 	}
 	&.@{prefix}--focus,
 	&.@{prefix}--focus.@{prefix}--checked {
-	    &:hover .@{prefix}-switch-icon ,
-	    .@{prefix}-switch-icon {
+	    &:hover .@{prefix}-icon ,
+	    .@{prefix}-icon {
 	        box-shadow: 0 0 0 0.125em @shadow;
 	    }
 	}
