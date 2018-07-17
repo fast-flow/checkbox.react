@@ -63,7 +63,7 @@
 
 
 
-## themes else
+## else
 
 > 内置themes `partial` `exist` 给[其他组件](https://onface.github.io/tree.react/)预用
 

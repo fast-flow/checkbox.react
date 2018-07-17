@@ -1051,7 +1051,7 @@ html .face-one-head-nav-switch {
 .face-one-nav-F-inner {
   width: 16em;
   height: 100%;
-  background-color: white;
+  /*background-color: white;*/
   color: #495057;
   line-height: 2.8;
   box-sizing: border-box;
@@ -1155,6 +1155,7 @@ html .face-one-nav-switch {
   }
   .face-one-nav-F-inner {
     position: relative;
+    background-color: white;
     overflow-y: auto;
     border-right: none;
     z-index: 2;
@@ -2004,7 +2005,7 @@ a.face-one-feature-item .face-one-feature-item-label {
   float: left;
 }
 .face-one-layout-cnt {
-  padding-left: 16em;
+  padding-left: 15.9em;
   padding-right: 10em;
   box-sizing: border-box;
   vertical-align: top;

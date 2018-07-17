@@ -20,7 +20,7 @@
         <script data-markrun-lastrun="true">
         ;(function(){
             var  date = new Date().getFullYear() + '-' + new Date().getMonth() + '-' + new Date().getDate()
-            document.write('<scri' + 'pt src="./doc/line/simple.demo.js?v="' + date + '" ></sc' + 'ript>')
+            document.write('<scri' + 'pt src="./doc/simple.demo.js?v="' + date + '" ></sc' + 'ript>')
         }())
         </script>
     -->
