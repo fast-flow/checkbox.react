@@ -1,7 +1,7 @@
 {
     "name": "checkbox.react",
     "main": "lib/index.js",
-    "version": "0.3.11",
+    "version": "0.3.12",
     "description": "Checkbox",
     "keywords": "",
     "scripts": {
